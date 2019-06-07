@@ -1,0 +1,580 @@
+/* GENERAL */
+
+
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+}
+
+
+
+
+
+/* CONTENEURS */
+
+
+
+
+
+.main-container {
+    width: 70%;
+    margin: auto;
+    margin-top: 32px;
+}
+
+.main-container h2 {
+    font-size: 2.2em;
+    font-family: Rockwell;
+    text-decoration: underline;
+}
+
+.main-container > p {
+    font-family: Montserrat;
+    font-size: 1.3em;
+}
+
+.main-container a {
+    font-family: Rockwell;
+    font-size: 1.2em;
+    color: #fe4a49;
+    text-decoration: none;
+}
+
+.main-container a:hover {
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    -ms-transition: ease-out 0.2s;
+    -o-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    color: #fec04e;
+}
+
+.error-message {
+    margin-top: 32px;
+    padding: 32px;
+    font-family: "Lato Light";
+    font-size: 1.2em;
+    border-left: 2px solid #fe4a49;
+    background-color: #fff;
+    box-shadow: 2px 1px 8px #EEE;
+    line-height: 1.6em;
+}
+
+
+
+
+
+/* FORMULAIRE D'INSCRIPTION  */
+
+
+
+
+
+.form-registration > h3 {
+    font-size: 1.8em;
+    font-family: Rockwell;
+    color: #fec04e;
+}
+
+.form-registration label {
+    display: block;
+    margin-top: 32px;
+    margin-left: 64px;
+    font-family: Rockwell;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.form-registration input {
+    width: 60%;
+    margin: 16px 0;
+    padding: 16px;
+    font-size: 1.1em;
+    font-family: "Montserrat";
+    border: none;
+    border-bottom: 2px solid transparent;
+    box-shadow: 2px 1px 8px #DDD;
+}
+
+.form-registration input:focus {
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    -ms-transition: ease-out 0.2s;
+    -o-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    border-color: #833471;
+}
+
+
+.form-registration input[type="date"]  {
+    width: 30%;
+}
+
+.form-registration input[type="submit"] {
+    width: 30%;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    display: block;
+    color: #050505;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.form-registration input[type="submit"]:hover {
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    -ms-transition: ease-out 0.2s;
+    -o-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    background-color: #fe4a49;
+}
+
+.form-registration > input[type="submit"]:hover {
+    color: #FFF;
+}
+
+
+select {
+    display: inline-block;
+    margin: 0;
+    margin-top: 16px;
+    padding: 0.5em 3.5em 0.5em 1em;
+    border: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    font: inherit;
+    font-family: "Montserrat";
+    background-image:
+            linear-gradient(45deg, transparent 50%, #fff 50%),
+            linear-gradient(135deg, #fff 50%, transparent 50%),
+            linear-gradient(to right, #833471, #833471);
+    background-position:
+            calc(100% - 20px) calc(1em + 2px),
+            calc(100% - 15px) calc(1em + 2px),
+            100% 0;
+    background-size:
+            5px 5px,
+            5px 5px,
+            2.5em 2.5em;
+    background-color: white;
+    background-repeat: no-repeat;
+    box-shadow: 2px 1px 8px #DDD;
+}
+
+select:focus {
+    background-image:
+            linear-gradient(45deg, #fff 50%, #833471 50%),
+            linear-gradient(135deg, #833471 50%, #fff 50%),
+            linear-gradient(to right, #833471, #833471);
+    background-position:
+            calc(100% - 15px) 1em,
+            calc(100% - 20px) 1em,
+            100% 0;
+    background-size:
+            5px 5px,
+            5px 5px,
+            2.5em 2.5em;
+    background-repeat: no-repeat;
+    border: #833471;
+    outline: 0;
+}
+
+.radio-content {
+    width: auto;
+    display: inline-block;
+    margin: 8px;
+    font-size: 1.1em;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+input[type=radio] + label {
+    margin-right: 32px;
+    cursor: pointer;
+    font-family: "Montserrat";
+}
+
+input[type=radio] + label:before {
+    background: #fff;
+    border: 1px solid #050505;
+    border-radius: 2em;
+    margin-top: -6px;
+    margin-left: 4px;
+    margin-right: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    align-content: center;
+    content: '';
+    width: 10px;
+    height: 10px;
+}
+
+input[type=radio]:checked + label:before {
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    -ms-transition: ease-out 0.2s;
+    -o-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    background: #833471;
+    border-color: #833471;
+}
+
+
+
+
+
+
+/* CONNEXION A L'ADMINISTRATION */
+
+
+
+
+
+.form-admin-login {
+    margin-top: 32px;
+}
+
+.form-admin-login label {
+    display: block;
+    margin-top: 16px;
+    margin-left: 32px;
+    font-family: Rockwell;
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+.form-admin-login input {
+    display: block;
+    width: 50%;
+    margin-top: 16px;
+    padding: 16px;
+    font-family: "Lato Light";
+    font-size: 1.1em;
+    border: 2px solid transparent;
+}
+
+.form-admin-login input:focus {
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    -ms-transition: ease-out 0.2s;
+    -o-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    border-color: #009fb7;
+}
+
+.form-admin-login input[type="submit"] {
+    width: calc(20% - 14px);
+    margin-left: 17.5%;
+    margin-top: 16px;
+    padding: 14px;
+    background-color: #fff;
+    border: 1px solid #009fb7;
+    color: #009fb7;
+    font-family: Montserrat;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.form-admin-login input[type="submit"]:hover {
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    -ms-transition: ease-out 0.2s;
+    -o-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    border-color: #009fb7;
+    background-color: #009fb7;
+    color: #fff;
+}
+
+
+
+
+
+/* ADMINISTRATION ACCUEIL */
+
+
+
+
+
+#head-table {
+    padding: 12px 32px;
+    background-color: #ff9f1c;
+    font-family: Rockwell;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+tr:nth-child(odd) {
+    background-color: #F5F5F5;
+}
+
+td {
+    padding: 18px;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 1.2em;
+}
+
+.btn-icon {
+    border: none;
+    background-color: transparent;
+    font-size: 1.1em;
+}
+
+
+
+
+
+/* ADMINISTRATION LISTE DES COMPTES UTLISATEURS  */
+
+
+
+
+
+.list-container {
+    padding: 32px;
+}
+
+.list-container h3 {
+    margin-top: 16px;
+    font-family: Rockwell;
+    font-size: 1.5em;
+    color: #833471;
+}
+
+.list-container h3:nth-child(1) {
+    margin-top: 0;
+}
+
+.list-user-content {
+    width: calc(90% - 16px);
+    margin: auto;
+    margin-top: 16px;
+    padding: 8px;
+    padding-left: 16px;
+    border-left: 2px solid #fec04e;
+    font-family: "Montserrat";
+    font-size: 1.2em;
+}
+
+.list-user-edit form {
+    display: inline-block;
+}
+
+.list-user-edit form button {
+    border: 0;
+    background-color: transparent;
+    font-size: 1.1em;
+}
+
+.list-user-edit a, .list-user-edit button
+{
+    padding: 0 8px;
+    color: #505050;
+}
+
+#edit:hover, #delete:hover
+{
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    -ms-transition: ease-out 0.2s;
+    -o-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    cursor: pointer;
+}
+
+#edit:hover {
+    color: #009fb7;
+}
+
+#delete:hover {
+    color: #fe4a49;
+}
+
+#female {
+    color: deeppink;
+}
+
+#male {
+    color: #009fb7;
+}
+
+
+
+
+
+/* ADMIN EDITION DES COMPTES UTLISATEURS */
+
+
+
+
+
+#check-job, #checkbox-label {
+    margin-top: 32px;
+    margin-left: 32px;
+    display: inline-block;
+    font-size: 1.2em;
+    font-family: Rockwell;
+    color: #fe4a49;
+}
+
+#check-job {
+    width: auto;
+}
+
+#hide-select {
+    display: none;
+}
+
+
+
+
+
+/* ADMINISTRATION AJOUT DES COMPTES  */
+
+
+
+
+
+.btn-add-choice {
+    display: inline-block;
+    margin: 0 8px;
+    padding: 12px;
+    border: 2px solid #fe4a49;
+    font-family: "Lato Light";
+    font-size: 1.2em;
+    color: #fe4a49;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-add-choice:hover {
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    -ms-transition: ease-out 0.2s;
+    -o-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    color: #833471;
+    border-color: #833471;
+}
+
+.new-form-container {
+    display: none;
+    margin-top: 32px;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+
+
+
+
+
+@media only screen and (max-width: 1200px) {
+    .main-container {
+        width: 80%;
+    }
+
+    .form-registration input, .form-admin-login input {
+        width: 90%;
+        margin-left: auto;
+    }
+
+    .form-registration > input[type="date"]  {
+        width: 70%;
+        margin-left: auto;
+    }
+
+    .form-registration select {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .form-registration input[type="submit"] {
+        width: 50%;
+        margin: auto;
+    }
+
+    .form-admin-login input[type="submit"] {
+        width: 40%;
+        margin: 32px auto;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+    .main-container {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .main-container h2 {
+        margin-left: 16px;
+        font-size: 2em;
+    }
+
+    .main-container p {
+        margin: 32px;
+    }
+
+    .form-registration h3 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    .form-registration input, .form-admin-login input, .form-registration input[type="date"] {
+        width: calc(100% - 36px);
+    }
+
+    .form-registration input[type="submit"], .form-admin-login input[type="submit"] {
+        width: 60%;
+    }
+
+    .list-container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .list-container h3 {
+        margin: 24px;
+    }
+
+    .list-user-content {
+        width: 100%;
+        padding: 0;
+        margin: 16px 0;
+        border: none;
+        border-top: 2px solid #fec04e;
+        border-bottom: 2px solid #fec04e;
+    }
+
+    #user-edit {
+        margin: 0 32px;
+        padding-bottom: 24px;
+        text-align: center;
+    }
+
+    table {
+        width: 100%;
+    }
+    td {
+        padding: 12px 0;
+        font-size: 1em;
+    }
+}
